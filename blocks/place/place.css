@@ -1,6 +1,26 @@
 .place {
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  grid-auto-flow: column;
+  grid-template-columns: min-content 1fr;
   grid-gap: 48px 40px;
+}
+
+@media screen and (max-width: 1279px) {
+  .place {
+    grid-gap: 48px 32px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .place {
+    grid-gap: 48px 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .place {
+    grid-template-rows: repeat(auto-fit, minmax(1px, min-content));
+    grid-template-columns: min-content;
+    grid-row-gap: 32px;
+  }
 }

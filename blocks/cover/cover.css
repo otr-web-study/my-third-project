@@ -1,7 +1,13 @@
 .cover {
   max-width: 1184px;
-  background-image: url(../../images/cover-trains.jpg);
-  min-height: 740px;
   background-size: cover;
+  background-image: url(../../images/cover-trains.jpg);
+  padding-top: calc(100% / 1.6);
   position: relative;
+}
+
+@media screen and (max-width: 1279px) {
+  .cover {
+    max-width: 100%;
+  }
 }

@@ -1,9 +1,15 @@
 .lead__title {
-  width: calc(100% - 264px);
   max-width: 720px;
   font-size: 96px;
   font-weight: 900;
   line-height: 100px;
   margin: 0 auto;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 767px) {
+  .lead__title {
+    max-width: 288px;
+    font-size: 40px;
+    line-height: 44px;
+  }
 }
